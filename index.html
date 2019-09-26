@@ -1,0 +1,19 @@
+<html>
+<body>
+
+  <div>
+    NOT INITIALIZED
+  </div>
+</body>
+<script>
+var element = document.body.children[0]
+if (window.webkit) {
+  element.textContent = 'WEBKIT FOUND'
+  window.webkit.messageHandlers.barEvents.postMessage({message:'BALAILLAAN'});
+  element.textContent = 'WEBKIT MESSAGE SENT'
+} else {
+  element.textContent = 'WEBKIT NOT FOUND'
+}
+
+</script>
+</html>
